@@ -1,5 +1,5 @@
 .card {
-    /*border: 1px solid white;*/
+    border: 1px solid white;
     padding: 2em 0;
     display: flex;
     justify-content: center;
@@ -8,7 +8,7 @@
 }
 
 .card .social-list {
-    /*border: 1px solid white;*/
+    border: 1px solid white;
     width: 5%;
     list-style: none;
     display: flex;
@@ -18,7 +18,7 @@
 }
 
 .card .social-list li {
-    /*border: 1px solid white;*/
+    border: 1px solid white;
     text-align: center;
     align-content: center;
     height: 70px;
@@ -34,7 +34,7 @@
 
 .card .info {
     width: 30%;
-    /*border: 1px solid white;*/
+    border: 1px solid white;
     padding: 2em;
     margin-right: 40px;
     display: flex;
@@ -43,7 +43,7 @@
 }
 
 .card .info .title {
-    /*border: 1px solid white;*/
+    border: 1px solid white;
     color: #FBE5C1;
     font-size: 70px;
     font-weight: 400;
@@ -51,21 +51,22 @@
 }
 
 .card .info .text {
-    /*border: 1px solid white;*/
+    border: 1px solid white;
     font-size: 17px;
 }
 
 .card img {
-    /*border: 1px solid white;*/
+    border: 1px solid white;
     width: 50%;
 }
 
-/* @media (max-width: 750px) {
+@media (max-width: 750px) {
     .card {
-        flex-direction: column;
-        align-items: center;
         height: auto;
+        padding: 0;
+        margin: 0;
         min-width: 400px;
+        margin-top: 50px;
     }
 
     .card .social-list {
@@ -74,6 +75,7 @@
 
     .card .info {
         padding: 0;
+        margin: 0;
         width: 80%;
     }
 
@@ -92,4 +94,4 @@
 
 @media (min-width: 751px) and (max-width: 1000px) {
     
-} */
+}
