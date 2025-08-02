@@ -2,24 +2,26 @@
     width: 100%;
     height: 25vh;
     min-height: 150px;
-    min-width: 1000px;
-    /* border: 1px solid white; */
+    min-width: 1200px;
+    /*border: 1px solid white;*/
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .logo {
-    /* border: 1px solid white; */
+    /*border: 1px solid white;*/
     background-image: url('../assets/logos/logo-transparent-png.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     width: 500px;
     height: 100%;
+    cursor: pointer;
 }
 
 .navbar ul {
+    /*border: 1px solid white;*/
     display: flex;
     justify-content: center;
     list-style: none;
@@ -29,18 +31,13 @@
 }
 
 .navbar ul li {
+    /*border: 1px solid white;*/
     padding: 0.5em;
     font-size: 15px;
     font-weight: 500;
     cursor: pointer;
     text-align: center;
     width: 120px;
-}
-
-.nav-link.active {
-    color: #FBE5C1;
-    font-weight: 500;
-    opacity: 1;
 }
 
 .nav-link {
@@ -51,42 +48,76 @@
     display: inline-block;
 }
 
+.nav-link.active {
+    color: #FBE5C1;
+    font-weight: 500;
+    opacity: 1;
+}
+
 .nav-link:hover {
     transform: scale(1.2);
     opacity: 1;
 }
 
-@media (max-width: 750px) {
+
+/* === MEDIA QUERY: Tablets grandes / laptops pequeñas (901px - 1200px) === */
+@media (max-width: 1350px) {
     .header-container {
-        min-width: 400px;
-        min-height: 200px;
+        min-width: 100%;
         flex-direction: column;
+        height: auto;
+        padding: 1em 0;
     }
 
     .logo {
         width: 100%;
+        height: 200px;
         background-image: url('../assets/logos/text-logo-png.png');
     }
 
     .navbar ul li {
-        width: 80px;
-        font-size: 12px;
+        font-size: 14px;
+        width: 100px;
     }
 }
 
-@media (min-width: 751px) and (max-width: 1000px) {
+
+/* === MEDIA QUERY: Tablets y móviles grandes (601px - 900px) === */
+@media (max-width: 900px) {
+    .navbar ul li {
+        font-size: 13px;
+        width: 90px;
+    }
+
+    .logo {
+        height: 200px;
+    }
+}
+
+
+/* === MEDIA QUERY: Móviles pequeños (hasta 600px) === */
+@media (max-width: 600px) {
     .header-container {
-        min-width: 400px;
-        min-height: 200px;
+        min-width: 100%;
         flex-direction: column;
+        height: auto;
+        padding: 1em 0;
     }
 
     .logo {
         width: 100%;
+        height: 180px;
         background-image: url('../assets/logos/text-logo-png.png');
     }
 
+    .navbar ul {
+        flex-direction: row;
+        gap: 1em;
+    }
+
     .navbar ul li {
+        width: auto;
         font-size: 12px;
+        padding: 0.4em;
     }
 }

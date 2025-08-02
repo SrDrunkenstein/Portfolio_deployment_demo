@@ -4,8 +4,7 @@ import '../../styles/Header.css'
 function Header() {
     return (
         <div className="header-container">
-            <div className='logo'>
-            </div>
+            <NavLink to="/" className="logo"></NavLink>
 
             <nav className="navbar">
                 <ul>
