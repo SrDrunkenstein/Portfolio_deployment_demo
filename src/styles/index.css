@@ -3,16 +3,11 @@
     padding: 0;
     font-family: "REM", serif;
     color: white;
-    box-sizing: border-box;
+    /* background-color: #1E1E1E; */
 }
 
-html,
 body {
-    height: 100%;
-    min-height: 100dvh;
     background-image: linear-gradient(to bottom, #20242D 0%, #20242D 50%, #05BFCE 100%);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x: hidden;
+    /* background-color: aqua; */
+    min-height: 100vh;
 }
