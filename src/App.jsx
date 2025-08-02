@@ -14,6 +14,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
     </BrowserRouter>
+    // <h1>Hola mundo</h1>
   );
 }
 
