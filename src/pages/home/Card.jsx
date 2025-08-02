@@ -2,7 +2,7 @@ import '../../styles/home/Card.css'
 
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
-import picture from '../../assets/images/ex.jpg'
+import picture from '../../assets/images/pic.jpeg'
 
 function Card() {
     return (

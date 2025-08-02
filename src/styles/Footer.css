@@ -1,0 +1,35 @@
+.footer {
+    /*border: 1px solid white;*/
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+}
+
+.footer .footer-text {
+    display: inline;
+    width: 60%;
+    opacity: .7;
+    text-align: center;
+    align-content: center;
+    /*border: 1px solid white;*/
+}
+
+/* === MEDIA QUERY: Tablets y móviles grandes (601px - 900px) === */
+@media (max-width: 900px) {
+    .footer {
+        margin-top: 20px;
+    }
+
+    .footer .footer-text {
+        opacity: .7;
+        font-size: 15px;
+    }
+}
+
+/* === MEDIA QUERY: Móviles pequeños (hasta 600px) === */
+@media (max-width: 600px) {
+    .footer .footer-text {
+        opacity: .7;
+        font-size: 13px;
+    }
+}

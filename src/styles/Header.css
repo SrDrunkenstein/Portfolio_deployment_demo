@@ -116,7 +116,7 @@
     }
 
     .navbar ul li {
-        width: auto;
+        width: 80px;
         font-size: 12px;
         padding: 0.4em;
     }
