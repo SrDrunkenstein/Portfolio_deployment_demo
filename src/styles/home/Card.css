@@ -10,21 +10,22 @@
 }
 
 .card {
-    border: 1px solid #FBE5C1;
+    /*border: 1px solid white;*/
+    background-color: #20242D;
     border-radius: 30px;
-    box-shadow: 5px 5px 5px #fbe5c185;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
     padding: 2em 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 80%;
+    min-width: 1220px;
+    height: 100%;
 }
 
 .card .social-list {
     /*border: 1px solid white;*/
     padding: 1em;
-    width: 5%;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -38,6 +39,7 @@
     align-content: center;
     background-color: transparent;
     height: 70px;
+    width: 70px;
     list-style: none;
     transition: transform 0.3s ease-in-out, opacity 0.2s;
     cursor: pointer;
@@ -51,6 +53,7 @@
 
 .card .info {
     width: 40%;
+    min-width: 500px;
     /*border: 1px solid white;*/
     padding: 2em;
     margin-right: 40px;
@@ -61,19 +64,44 @@
 
 .card .info .title {
     /*border: 1px solid white;*/
-    margin: 20px 0;
     text-align: left;
-    color: #FBE5C1;
+    /* color: #05BFCE; */
     font-size: 70px;
     font-weight: 400;
+}
+
+.card .info .subtitle {
+    /*border: 1px solid white;*/
+    color: #05BFCE;
 }
 
 .card .info .text {
     /*border: 1px solid white;*/
     font-size: 17px;
     text-align: left;
-    margin-bottom: 20px;
+    margin: 20px 0;
     line-height: 25px;
+}
+
+.card .info .contact-button {
+    text-align: center;
+    width: 35%;
+    min-width: 180px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    /*border: 1px solid white;*/
+    color: black;
+    background-color: hsl(184 70% 51.4%);
+    box-shadow: 0 0 10px #05BFCE, 0 0 20px #05BFCE, 0 0 30px #30e1f2;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, opacity 0.3s;
+    border: none;
+}
+
+.card .info .contact-button:hover {
+    transform: scale(1.1);
 }
 
 .card img {
@@ -83,7 +111,6 @@
     border-radius: 50%;
     object-fit: cover;
 }
-
 
 /* === MEDIA QUERY: Tablets grandes / laptops pequeñas (901px - 1200px) === */
 @media (max-width: 1350px) {
@@ -98,6 +125,7 @@
         height: auto;
         flex-direction: column;
         align-items: center;
+        min-width: unset;
     }
 
     .card .social-list {
@@ -113,11 +141,18 @@
         padding: 0;
         margin: 0;
         width: 80%;
+        min-width: unset;
+        align-items: center;
     }
 
     .card .info .title {
         text-align: center;
         font-size: 40px;
+        margin-top: 10px;
+    }
+
+    .card .info .subtitle {
+        text-align: center;
     }
 
     .card .info .text {
@@ -125,10 +160,15 @@
         font-size: 16px;
     }
 
+    .card .info .contact-button {
+        width: 40%;
+        margin-bottom: 20px;
+    } 
+
     .card img {
         order: 1;
-        width: 250px;
-        height: 250px;
+        width: 350px;
+        height: 350px;
     }
 }
 
@@ -144,8 +184,8 @@
     }
 
     .card img {
-        width: 250px;
-        height: 250px;
+        width: 310px;
+        height: 310px;
     }
 }
 
@@ -171,8 +211,18 @@
         font-size: 24px;
     }
 
+    .card .info .subtitle {
+        font-size: 18px;
+    }
+
+    .card .info .contact-button {
+        width: 50%;
+        min-width: 150px;
+        font-size: 13px;
+    } 
+
     .card .info .text {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 20px;
     }
 

@@ -35,17 +35,11 @@ function Card() {
                     <h1 className='title'>
                         José Abraham Valdez Cruz
                     </h1>
+                    <h2 className='subtitle'>Frontend Developer</h2>
                     <p className='text'>
-                        Soy un estudiante de Ingeniería en
-                        Computación con gran interés en el
-                        aprendizaje autodidacta y continuo
-                        en diversas áreas, incluyendo el
-                        desarrollo de aplicaciones web,
-                        electrónica, automatización y
-                        firmware para proyectos que integran
-                        software y hardware.
-
+                        I am a Computer Engineering student with a keen interest in self-taught and continuous learning in various areas, including web application development with experience building web applications using frameworks such as React and Vue.js and runtime environments such as Node.js.
                     </p>
+                    <button className='contact-button'>Let's work together!</button>
                 </div>
                 <img src={picture} alt="image" />
             </div>

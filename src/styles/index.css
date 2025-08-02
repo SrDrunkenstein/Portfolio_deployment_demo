@@ -1,8 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Nanum Myeongjo", serif;
+    font-family: "REM", serif;
     color: white;
-    background-color: #1E1E1E;
-    /* 23252A */
+    box-sizing: border-box;
+    /* background-color: #1E1E1E; */
+}
+
+body {
+    background: linear-gradient(to bottom, #20242D 0%, #20242D 50%, #05BFCE 100%);
+    min-height: 100vh;
 }
