@@ -93,7 +93,7 @@
     color: black;
     background-color: hsl(184 70% 51.4%);
     box-shadow: 0 0 10px #05BFCE, 0 0 20px #05BFCE, 0 0 30px #30e1f2;
-    border-radius: 20px;
+    border-radius: 7px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out, opacity 0.3s;
     border: none;

@@ -1,10 +1,8 @@
-import '../../styles/home/Card.css'
-
+import '../../styles/home/Card.css';
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import picture from '../../assets/images/pic.jpg';
 
-import picture from '../../assets/images/pic.jpg'
-
-function Card() {
+function Card({ onContactClick }) {
     return (
         <div className='body'>
             <div className="card">
@@ -39,7 +37,9 @@ function Card() {
                     <p className='text'>
                         I am a Computer Engineering student with a keen interest in self-taught and continuous learning in various areas, including web application development with experience building web applications using frameworks such as React and Vue.js and runtime environments such as Node.js.
                     </p>
-                    <button className='contact-button'>Let's work together!</button>
+                    <button className='contact-button' onClick={onContactClick}>
+                        Let's work together!
+                    </button>
                 </div>
                 <img src={picture} alt="image" />
             </div>
@@ -47,4 +47,4 @@ function Card() {
     );
 }
 
-export default Card
+export default Card;

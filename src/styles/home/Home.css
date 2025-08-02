@@ -1,0 +1,5 @@
+.blur {
+    filter: blur(10px);
+    transition: filter 0.4s ease;
+    pointer-events: none;
+}
