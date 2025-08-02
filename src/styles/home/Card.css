@@ -1,7 +1,6 @@
 .body {
     /*border: 1px solid white;*/
     width: 100vw;
-    min-width: 1200px;
     min-height: 600px;
     height: 70vh;
     display: flex;
@@ -13,14 +12,14 @@
     /*border: 1px solid white;*/
     background-color: #20242D;
     border-radius: 30px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
     padding: 2em 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80%;
-    min-width: 1220px;
-    height: 100%;
+    min-width: 1200px;
+    height: 80%;
 }
 
 .card .social-list {
@@ -53,7 +52,7 @@
 
 .card .info {
     width: 40%;
-    min-width: 500px;
+    min-width: 200px;
     /*border: 1px solid white;*/
     padding: 2em;
     margin-right: 40px;
@@ -113,7 +112,7 @@
 }
 
 /* === MEDIA QUERY: Tablets grandes / laptops pequeñas (901px - 1200px) === */
-@media (max-width: 1350px) {
+@media (max-width: 1300px) {
     .body {
         min-width: unset;
         height: auto;

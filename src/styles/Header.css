@@ -61,7 +61,7 @@
 
 
 /* === MEDIA QUERY: Tablets grandes / laptops pequeñas (901px - 1200px) === */
-@media (max-width: 1350px) {
+@media (max-width: 1200px) {
     .header-container {
         min-width: 100%;
         flex-direction: column;
