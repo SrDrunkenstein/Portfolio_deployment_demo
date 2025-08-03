@@ -111,7 +111,6 @@
     object-fit: cover;
 }
 
-/* === MEDIA QUERY: Tablets grandes / laptops pequeñas (901px - 1200px) === */
 @media (max-width: 1300px) {
     .body {
         min-width: unset;
@@ -170,8 +169,6 @@
     }
 }
 
-
-/* === MEDIA QUERY: Tablets y móviles grandes (601px - 900px) === */
 @media (max-width: 900px) {
     .card .info .title {
         font-size: 30px;
@@ -187,8 +184,6 @@
     }
 }
 
-
-/* === MEDIA QUERY: Móviles pequeños (hasta 600px) === */
 @media (max-width: 600px) {
     .body {
         min-width: 100%;

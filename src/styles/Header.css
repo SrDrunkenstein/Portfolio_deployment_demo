@@ -59,8 +59,6 @@
     opacity: 1;
 }
 
-
-/* === MEDIA QUERY: Tablets grandes / laptops pequeñas (901px - 1200px) === */
 @media (max-width: 1200px) {
     .header-container {
         min-width: 100%;
@@ -81,8 +79,6 @@
     }
 }
 
-
-/* === MEDIA QUERY: Tablets y móviles grandes (601px - 900px) === */
 @media (max-width: 900px) {
     .navbar ul li {
         font-size: 13px;
@@ -94,8 +90,6 @@
     }
 }
 
-
-/* === MEDIA QUERY: Móviles pequeños (hasta 600px) === */
 @media (max-width: 600px) {
     .header-container {
         min-width: 100%;

@@ -3,11 +3,9 @@
     padding: 0;
     font-family: "REM", serif;
     color: white;
-    /* background-color: #1E1E1E; */
 }
 
-body {
+html, body {
     background-image: linear-gradient(to bottom, #20242D 0%, #20242D 50%, #05BFCE 100%);
-    /* background-color: aqua; */
     min-height: 100dvh;
 }

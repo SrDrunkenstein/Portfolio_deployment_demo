@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     background: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
@@ -43,16 +43,29 @@
 }
 
 .form {
-    width: 80%;
-    height: 70%;
     /*border: 1px solid white;*/
+    width: 80%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.form-message {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.form-message.success {
+    color: limegreen;
+}
+
+.form-message.error {
+    color: red;
 }
 
 .full-name {
-    /*border: 1px solid white;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -112,21 +125,20 @@ textarea {
     cursor: pointer;
 }
 
-/* === MEDIA QUERY: Tablets y móviles grandes (601px - 900px) === */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .modal-content {
         width: 70%;
-        height: 400px;
+        height: 500px;
     }
 
     .modal-title {
-        font-size: 20px;
-        font-weight: 400;
+        font-size: 25px;
+        font-weight: 600;
     }
 
     .modal-description {
-        font-size: 12px;
-        font-weight: 200;
+        font-size: 14px;
+        font-weight: 300;
     }
 
     input {
@@ -147,15 +159,40 @@ textarea {
     }
 
     .full-name {
-        height: 60px;
+        height: auto;
         flex-direction: column;
         justify-content: space-evenly;
-        gap: .4rem;
+        gap: 1rem;
     }
 
     .send-button {
         width: 50%;
         height: 30px;
         font-weight: 400;
+    }
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        width: 70%;
+        height: 400px;
+    }
+
+    .modal-title {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .modal-description {
+        font-size: 12px;
+        font-weight: 200;
+    }
+
+    .form {
+        gap: .5rem;
+    }
+
+    .full-name {
+        gap: .5rem;
     }
 }
