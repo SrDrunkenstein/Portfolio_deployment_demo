@@ -8,4 +8,5 @@
 html, body {
     background-image: linear-gradient(to bottom, #20242D 0%, #20242D 50%, #05BFCE 100%);
     min-height: 100dvh;
+    min-width: 300px;
 }

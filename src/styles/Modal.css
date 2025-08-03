@@ -58,7 +58,7 @@
 }
 
 .form-message.success {
-    color: limegreen;
+    color: rgb(67, 201, 67);
 }
 
 .form-message.error {

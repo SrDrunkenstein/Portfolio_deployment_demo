@@ -40,14 +40,14 @@ function Modal({ onClose }) {
             })
             .then(
                 () => {
-                    setSuccessMessage('¡Mensaje enviado con éxito!');
+                    setSuccessMessage('Message sent!, I will reply as soon as possible');
                     setErrorMessage('');
                     form.current.reset();
 
                     // Ocultar mensaje de éxito después de 3 segundos
                     setTimeout(() => {
                         setSuccessMessage('');
-                    }, 3000);
+                    }, 5000);
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
