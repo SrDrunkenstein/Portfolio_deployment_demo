@@ -111,3 +111,51 @@ textarea {
     opacity: .7;
     cursor: pointer;
 }
+
+/* === MEDIA QUERY: Tablets y móviles grandes (601px - 900px) === */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 70%;
+        height: 400px;
+    }
+
+    .modal-title {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .modal-description {
+        font-size: 12px;
+        font-weight: 200;
+    }
+
+    input {
+        height: 10px;
+        background-color: #F3F3F3;
+        border-radius: 5px;
+        padding: 7px;
+        color: black;
+    }
+
+    textarea {
+        height: 70px;
+        background-color: #F3F3F3;
+        padding: 7px;
+        border-radius: 5px;
+        align-content: center;
+        color: black;
+    }
+
+    .full-name {
+        height: 60px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: .4rem;
+    }
+
+    .send-button {
+        width: 50%;
+        height: 30px;
+        font-weight: 400;
+    }
+}
