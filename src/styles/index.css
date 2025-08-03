@@ -6,7 +6,8 @@
 }
 
 html, body {
-    background-image: linear-gradient(to bottom, #20242D 0%, #20242D 50%, #05BFCE 100%);
+    /* background-image: linear-gradient(to bottom, #20242D 0%, #20242D 50%, #05BFCE 100%); */
+    background-color: #20242D;
     min-height: 100dvh;
     min-width: 300px;
 }
