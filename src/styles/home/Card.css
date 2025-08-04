@@ -64,14 +64,13 @@
 .card .info .title {
     /*border: 1px solid white;*/
     text-align: left;
-    /* color: #05BFCE; */
     font-size: 70px;
     font-weight: 400;
 }
 
 .card .info .subtitle {
     /*border: 1px solid white;*/
-    color: #05BFCE;
+    color: hsl(184 130% 41.4%);
 }
 
 .card .info .text {

@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    min-width: 100vw;
     height: 100dvh;
     background: rgba(0, 0, 0, 0.6);
     display: flex;
@@ -72,7 +72,7 @@
 }
 
 input {
-    height: 25px;
+    height: 1.5rem;
     background-color: #F3F3F3;
     border-radius: 5px;
     padding: 7px;
@@ -80,7 +80,7 @@ input {
 }
 
 textarea {
-    height: 120px;
+    height: 6rem;
     background-color: #F3F3F3;
     padding: 7px;
     border-radius: 5px;
@@ -98,7 +98,7 @@ textarea {
 
 .send-button {
     width: 30%;
-    height: 30px;
+    height: 2rem;
     background-color: hsl(184 70% 51.4%);
     box-shadow: 0 0 10px #05BFCE, 0 0 20px #05BFCE, 0 0 30px #30e1f2;
     border-radius: 7px;
@@ -128,11 +128,12 @@ textarea {
 @media (max-width: 900px) {
     .modal-content {
         width: 70%;
-        height: 500px;
+        min-width: 480px;
+        height: 300px;
     }
 
     .modal-title {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 600;
     }
 
@@ -142,7 +143,7 @@ textarea {
     }
 
     input {
-        height: 10px;
+        height: .5rem;
         background-color: #F3F3F3;
         border-radius: 5px;
         padding: 7px;
@@ -150,19 +151,12 @@ textarea {
     }
 
     textarea {
-        height: 70px;
+        height: 3rem;
         background-color: #F3F3F3;
         padding: 7px;
         border-radius: 5px;
         align-content: center;
         color: black;
-    }
-
-    .full-name {
-        height: auto;
-        flex-direction: column;
-        justify-content: space-evenly;
-        gap: 1rem;
     }
 
     .send-button {
@@ -173,8 +167,15 @@ textarea {
 }
 
 @media (max-width: 600px) {
+    .full-name {
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+
     .modal-content {
-        width: 70%;
+        min-width: unset;
         height: 400px;
     }
 
