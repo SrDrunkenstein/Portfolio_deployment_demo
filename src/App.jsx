@@ -3,7 +3,7 @@ import Home from './pages/home/Home.jsx';
 import Portfolio from './pages/portfolio/Portfolio.jsx';
 import Resume from './pages/resume/Resume.jsx';
 
-import './styles/index.css'
+// import './styles/index.css'
 
 function App() {
   return (
